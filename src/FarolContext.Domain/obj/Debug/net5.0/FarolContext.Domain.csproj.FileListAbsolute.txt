@@ -1,0 +1,15 @@
+C:\Learning\farol\src\FarolContext.Domain\bin\Debug\net5.0\FarolContext.Domain.deps.json
+C:\Learning\farol\src\FarolContext.Domain\bin\Debug\net5.0\FarolContext.Domain.dll
+C:\Learning\farol\src\FarolContext.Domain\bin\Debug\net5.0\ref\FarolContext.Domain.dll
+C:\Learning\farol\src\FarolContext.Domain\bin\Debug\net5.0\FarolContext.Domain.pdb
+C:\Learning\farol\src\FarolContext.Domain\bin\Debug\net5.0\FarolContext.Shared.dll
+C:\Learning\farol\src\FarolContext.Domain\bin\Debug\net5.0\FarolContext.Shared.pdb
+C:\Learning\farol\src\FarolContext.Domain\obj\Debug\net5.0\FarolContext.Domain.csprojAssemblyReference.cache
+C:\Learning\farol\src\FarolContext.Domain\obj\Debug\net5.0\FarolContext.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Learning\farol\src\FarolContext.Domain\obj\Debug\net5.0\FarolContext.Domain.AssemblyInfoInputs.cache
+C:\Learning\farol\src\FarolContext.Domain\obj\Debug\net5.0\FarolContext.Domain.AssemblyInfo.cs
+C:\Learning\farol\src\FarolContext.Domain\obj\Debug\net5.0\FarolContext.Domain.csproj.CoreCompileInputs.cache
+C:\Learning\farol\src\FarolContext.Domain\obj\Debug\net5.0\FarolContext.Domain.csproj.CopyComplete
+C:\Learning\farol\src\FarolContext.Domain\obj\Debug\net5.0\FarolContext.Domain.dll
+C:\Learning\farol\src\FarolContext.Domain\obj\Debug\net5.0\ref\FarolContext.Domain.dll
+C:\Learning\farol\src\FarolContext.Domain\obj\Debug\net5.0\FarolContext.Domain.pdb

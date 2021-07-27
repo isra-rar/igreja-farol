@@ -1,0 +1,12 @@
+C:\Learning\farol\src\FarolContext.Shared\bin\Debug\net5.0\FarolContext.Shared.deps.json
+C:\Learning\farol\src\FarolContext.Shared\bin\Debug\net5.0\FarolContext.Shared.dll
+C:\Learning\farol\src\FarolContext.Shared\bin\Debug\net5.0\ref\FarolContext.Shared.dll
+C:\Learning\farol\src\FarolContext.Shared\bin\Debug\net5.0\FarolContext.Shared.pdb
+C:\Learning\farol\src\FarolContext.Shared\obj\Debug\net5.0\FarolContext.Shared.csprojAssemblyReference.cache
+C:\Learning\farol\src\FarolContext.Shared\obj\Debug\net5.0\FarolContext.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Learning\farol\src\FarolContext.Shared\obj\Debug\net5.0\FarolContext.Shared.AssemblyInfoInputs.cache
+C:\Learning\farol\src\FarolContext.Shared\obj\Debug\net5.0\FarolContext.Shared.AssemblyInfo.cs
+C:\Learning\farol\src\FarolContext.Shared\obj\Debug\net5.0\FarolContext.Shared.csproj.CoreCompileInputs.cache
+C:\Learning\farol\src\FarolContext.Shared\obj\Debug\net5.0\FarolContext.Shared.dll
+C:\Learning\farol\src\FarolContext.Shared\obj\Debug\net5.0\ref\FarolContext.Shared.dll
+C:\Learning\farol\src\FarolContext.Shared\obj\Debug\net5.0\FarolContext.Shared.pdb

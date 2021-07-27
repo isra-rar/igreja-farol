@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "FarolContext.Domain/1.0.0": {
+        "dependencies": {
+          "FarolContext.Shared": "1.0.0"
+        },
+        "runtime": {
+          "FarolContext.Domain.dll": {}
+        }
+      },
+      "FarolContext.Shared/1.0.0": {
+        "runtime": {
+          "FarolContext.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FarolContext.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FarolContext.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

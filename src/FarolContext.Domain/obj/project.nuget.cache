@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WWqyo0XCF80OSHNmuibgYdF8RVcuO7lixN9jtHcEYzWXP6eE2ufxnh2/Sg48RKowDkd8Zhlm/LdycWctV8c8Xg==",
+  "success": true,
+  "projectFilePath": "C:\\Learning\\farol\\src\\FarolContext.Domain\\FarolContext.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\israe\\.nuget\\packages\\flunt\\2.0.4\\flunt.2.0.4.nupkg.sha512",
+    "C:\\Users\\israe\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
