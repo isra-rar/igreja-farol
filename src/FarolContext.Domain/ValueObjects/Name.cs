@@ -1,4 +1,5 @@
 using FarolContext.Shared.ValueObjects;
+using Flunt.Validations;
 
 namespace FarolContext.Domain.ValueObjects
 {
@@ -8,6 +9,11 @@ namespace FarolContext.Domain.ValueObjects
         {
             FirstName = firstName;
             LastName = lastName;
+            
+            AddNotifications(new Contract<Name>()
+            .Requires()
+            .IsGreaterThan(FirstName, 3, "Name,FirstName", "Nome deve conter pelo menos 3 caracteres")
+            .IsGreaterThan(LastName, 3, "Name,LastName", "Nome deve conter pelo menos 3 caracteres"));
         }
 
         public string FirstName { get; private set; }

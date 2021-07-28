@@ -7,6 +7,7 @@ namespace FarolContext.Domain.Enums
         LEADER = 3,
         SUPERVISOR = 4,
         FACILITATOR = 5,
-        ORDINARY = 6
+        VOLUNTEERS = 6,
+        ORDINARY = 7
     }
 }
