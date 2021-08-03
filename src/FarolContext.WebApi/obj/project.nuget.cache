@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "4IeZj2WsrFmN/cztD+NJPp5MnTacoq8DU3nxoqz0Eo7ZE/6cz1Ana+3CZScl1saiVNiy+cl0/fQlLaWWDZ7RRg==",
+  "dgSpecHash": "WjUR0VwVrp9s04dVxh/AB6HiLBmWXyqLs7wWXElg9u3azUilCX0pkcwV2JVt/Ke/uDQiLpsPPmrHsdEVSGLC/Q==",
   "success": true,
   "projectFilePath": "C:\\Learning\\farol\\src\\FarolContext.WebApi\\FarolContext.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\israe\\.nuget\\packages\\divino.operationresult\\2.0.2\\divino.operationresult.2.0.2.nupkg.sha512",
+    "C:\\Users\\israe\\.nuget\\packages\\flunt\\2.0.4\\flunt.2.0.4.nupkg.sha512",
+    "C:\\Users\\israe\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
+    "C:\\Users\\israe\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\israe\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",

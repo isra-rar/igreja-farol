@@ -14,11 +14,11 @@ namespace FarolContext.Domain.Entities
             MemberInvited = memberInvited;
             Church = church;
 
-            AddNotifications(new Contract<Visitor>()
-            .Requires()
-            .IsNotNull(Church, "Member.Church", "Não é possivel criar um Membro sem uma Igreja vinculada"), 
-            church, name, document, email, contact, address
-            );
+            // AddNotifications(new Contract<Visitor>()
+            // .Requires()
+            // .IsNotNull(Church, "Member.Church", "Não é possivel criar um Membro sem uma Igreja vinculada"), 
+            // church, name, document, email, contact, address
+            // );
         }
 
         public DateTime VisitDate { get; private set; }

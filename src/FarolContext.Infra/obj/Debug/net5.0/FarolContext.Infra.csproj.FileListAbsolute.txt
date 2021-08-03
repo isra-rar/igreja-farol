@@ -1,0 +1,12 @@
+C:\Learning\farol\src\FarolContext.Infra\bin\Debug\net5.0\FarolContext.Infra.deps.json
+C:\Learning\farol\src\FarolContext.Infra\bin\Debug\net5.0\FarolContext.Infra.dll
+C:\Learning\farol\src\FarolContext.Infra\bin\Debug\net5.0\ref\FarolContext.Infra.dll
+C:\Learning\farol\src\FarolContext.Infra\bin\Debug\net5.0\FarolContext.Infra.pdb
+C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.csprojAssemblyReference.cache
+C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.AssemblyInfoInputs.cache
+C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.AssemblyInfo.cs
+C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.csproj.CoreCompileInputs.cache
+C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.dll
+C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\ref\FarolContext.Infra.dll
+C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.pdb

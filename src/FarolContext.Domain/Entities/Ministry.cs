@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using FarolContext.Shared.Entities;
 using Flunt.Validations;
 
 namespace FarolContext.Domain.Entities
@@ -14,13 +13,14 @@ namespace FarolContext.Domain.Entities
             Name = name;
             Church = church;
             Leader = leader;
+            _members = new List<Member>();
 
-            AddNotifications(new Contract<Ministry>()
-            .Requires()
-            .IsGreaterThan(Name, 3, "Ministry.Name", "Nome do Ministerio deve ser maior que 3 caracteres")
-            .IsNotNull(Church, "Ministry.Church", "Não é possivel criar um Ministerio sem uma Igreja vinculada")
-            .IsNotNull(Leader, "Ministry.Leader", "Não é possivel criar uma Ministerio sem Lider vinculado")
-            );
+            // AddNotifications(new Contract<Ministry>()
+            // .Requires()
+            // .IsGreaterThan(Name, 3, "Ministry.Name", "Nome do Ministerio deve ser maior que 3 caracteres")
+            // .IsNotNull(Church, "Ministry.Church", "Não é possivel criar um Ministerio sem uma Igreja vinculada")
+            // .IsNotNull(Leader, "Ministry.Leader", "Não é possivel criar uma Ministerio sem Lider vinculado")
+            // );
         }
 
         public string Name { get; private set; }
@@ -32,10 +32,10 @@ namespace FarolContext.Domain.Entities
         {
             if (member == null)
             {
-                AddNotifications(new Contract<Ministry>()
-                .Requires()
-                .IsNotNull(member, "Member", "Objeto Membro está nulo")
-                );
+                // AddNotifications(new Contract<Ministry>()
+                // .Requires()
+                // .IsNotNull(member, "Member", "Objeto Membro está nulo")
+                // );
             }
 
             _members.Add(member);

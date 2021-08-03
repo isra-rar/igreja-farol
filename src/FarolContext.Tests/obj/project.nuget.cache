@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8Rq/kUrhJwRqqoOgXYsZsfQ9FmJxOlSrDTCXDSV5ICaMKxa3Niy6XITjhwq0Pe7hq/iIfVL/QyMeO1KesbisWg==",
+  "dgSpecHash": "IQHyxBZtbQjakLvHEEiIHK+XXl6rAWAwWDWTj8d3gRFt9DtjqO+6Dvh6WrphQtRwYvkdF/oDWdkDywQsL8vXrg==",
   "success": true,
   "projectFilePath": "C:\\Learning\\farol\\src\\FarolContext.Tests\\FarolContext.Tests.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\israe\\.nuget\\packages\\bogus\\33.0.2\\bogus.33.0.2.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\flunt\\2.0.4\\flunt.2.0.4.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",

@@ -8,4 +8,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FarolContext.Domain\FarolContext.Domain.csproj" />
+    <ProjectReference Include="..\FarolContext.Infra\FarolContext.Infra.csproj" />
+  </ItemGroup>
+
 </Project>

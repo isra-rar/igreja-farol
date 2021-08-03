@@ -8,13 +8,25 @@
     ".NETCoreApp,Version=v5.0": {
       "FarolContext.Domain/1.0.0": {
         "dependencies": {
-          "FarolContext.Shared": "1.0.0"
+          "FarolContext.Shared": "1.0.0",
+          "Flunt": "2.0.4"
         },
         "runtime": {
           "FarolContext.Domain.dll": {}
         }
       },
+      "Flunt/2.0.4": {
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {
+            "assemblyVersion": "2.0.4.0",
+            "fileVersion": "2.0.4.0"
+          }
+        }
+      },
       "FarolContext.Shared/1.0.0": {
+        "dependencies": {
+          "Flunt": "2.0.4"
+        },
         "runtime": {
           "FarolContext.Shared.dll": {}
         }
@@ -26,6 +38,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Flunt/2.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0hBUXlsxLH2vsp3KGbRWp4nVqdn6XVuqUm8uW3C2vn8hVIspC1A5YKNQNP9jOGXFZgmKFUa3AUAQRxeWOYlZdg==",
+      "path": "flunt/2.0.4",
+      "hashPath": "flunt.2.0.4.nupkg.sha512"
     },
     "FarolContext.Shared/1.0.0": {
       "type": "project",

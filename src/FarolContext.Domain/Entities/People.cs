@@ -1,7 +1,6 @@
 using System;
 using FarolContext.Domain.Enums;
 using FarolContext.Domain.ValueObjects;
-using FarolContext.Shared.Entities;
 using Flunt.Validations;
 
 namespace FarolContext.Domain.Entities
@@ -18,11 +17,11 @@ namespace FarolContext.Domain.Entities
             Contact = contact;
             Address = address;
 
-            AddNotifications(new Contract<People>()
-            .Requires()
-            .IsNotNull(Age, "People.Age", "Idade é obrigatório")
-            .IsNotNull(Gender, "People.Gender", "Sexo é obrigatório"),
-                name, document, email, contact, address);
+            // AddNotifications(new Contract<People>()
+            // .Requires()
+            // .IsNotNull(Age, "People.Age", "Idade é obrigatório")
+            // .IsNotNull(Gender, "People.Gender", "Sexo é obrigatório"),
+            //     name, document, email, contact, address);
         }
 
         public Name Name { get; private set; }

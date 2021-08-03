@@ -102,3 +102,5 @@ C:\Learning\farol\src\FarolContext.Tests\obj\Debug\net5.0\FarolContext.Tests.dll
 C:\Learning\farol\src\FarolContext.Tests\obj\Debug\net5.0\ref\FarolContext.Tests.dll
 C:\Learning\farol\src\FarolContext.Tests\obj\Debug\net5.0\FarolContext.Tests.pdb
 C:\Learning\farol\src\FarolContext.Tests\obj\Debug\net5.0\FarolContext.Tests.genruntimeconfig.cache
+C:\Learning\farol\src\FarolContext.Tests\bin\Debug\net5.0\Flunt.dll
+c:\Learning\farol\src\FarolContext.Tests\bin\Debug\net5.0\Bogus.dll

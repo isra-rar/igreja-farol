@@ -1,16 +1,24 @@
 using FarolContext.Shared.ValueObjects;
+using Flunt.Validations;
 
 namespace FarolContext.Domain.ValueObjects
 {
     public class Contact : ValueObject
     {
-        public Contact(Phones phones)
+        public Contact(string cellPhone, string telephone)
         {
-            Phones = phones;
+            Cellphone = cellPhone;
+            Telephone = telephone;
 
-            AddNotifications(phones);
+            // AddNotifications(new Contract<Contact>()
+            // .Requires()
+            // .IsGreaterThan(Cellphone, 14, "Cellphone", "Numero de celular incorreto")
+            // .IsGreaterThan(Telephone, 13, "Cellphone", "Numero de telefone incorreto")
+            // );
         }
-        public Phones Phones { get; private set; }
+
+        public string Cellphone { get; private set; }
+        public string Telephone { get; private set; }
 
     }
 }
