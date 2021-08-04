@@ -7,13 +7,13 @@ namespace FarolContext.Domain.Entities
 {
     public class Member : People
     {
-        public Member(Church church, EMemberType memberType, Name name, DateTime age, EGender gender, Document document, Email email, Contact contact, Address address, Ministry ministry, Cell cell)
+        public Member(EMemberType memberType, Guid churchId, Guid ministryId, Guid cellId, Name name, DateTime age, EGender gender, Document document, Email email, Contact contact, Address address)
         : base(name, age, gender, document, email, contact, address)
         {
-            Church = church;
             MemberType = memberType;
-            Ministry = ministry;
-            Cell = cell;
+            ChurchId = churchId;
+            MinistryId = ministryId;
+            CellId = cellId;
 
             // AddNotifications(new Contract<Member>()
             // .Requires()
@@ -22,9 +22,12 @@ namespace FarolContext.Domain.Entities
             // );
         }
 
-        public Church Church { get; private set; }
         public EMemberType MemberType { get; private set; }
+        public Guid ChurchId { get; private set; }
+        public Church Church { get; private set; }
+        public Guid MinistryId { get; private set; }
         public Ministry Ministry { get; private set; }
-        public Cell Cell { get; private set; }
+        public Guid CellId { get; private set; }
+        public Cell Cell { get; set; }
     }
 }

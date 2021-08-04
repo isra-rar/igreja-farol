@@ -20,13 +20,7 @@ namespace FarolContext.Domain.Entities
             Address = address;
             _members = new List<Member>();
             _ministries = new List<Ministry>();
-            _cells = new List<Cell>();
-
-            // AddNotifications(new Contract<Church>()
-            // .Requires()
-            // .IsGreaterThan(Name, 3, "Chruch.Name", "O nome da igreja deve ser maior que 3 caracteres"),
-            // document, email, contact, address
-            // );
+            _cells = new List<Cell>();            
         }
 
         public string Name { get; private set; }

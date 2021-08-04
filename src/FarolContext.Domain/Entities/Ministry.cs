@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Flunt.Validations;
@@ -8,11 +9,11 @@ namespace FarolContext.Domain.Entities
     {
         private  IList<Member> _members;
 
-        public Ministry(string name, Church church, Member leader)
+        public Ministry(string name, Guid churchId, Guid leaderId)
         {
             Name = name;
-            Church = church;
-            Leader = leader;
+            ChurchId = churchId;
+            LeaderId = leaderId;
             _members = new List<Member>();
 
             // AddNotifications(new Contract<Ministry>()
@@ -22,8 +23,10 @@ namespace FarolContext.Domain.Entities
             // .IsNotNull(Leader, "Ministry.Leader", "Não é possivel criar uma Ministerio sem Lider vinculado")
             // );
         }
-
+     
         public string Name { get; private set; }
+        public Guid ChurchId { get; private set; }
+        public Guid LeaderId { get; private set; }
         public Church Church { get; private set; }
         public Member Leader { get; private set; }
         public IEnumerable<Member> Members { get { return _members.ToArray(); } }

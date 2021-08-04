@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Flunt.Validations;
@@ -6,13 +7,14 @@ namespace FarolContext.Domain.Entities
 {
     public class Cell : Entity
     {
-        private  IList<Member> _members;
-        public Cell(string name, Church church, Member leader, Member supervisor)
+        private IList<Member> _members;
+
+        public Cell(string name, Guid churchId, Guid leaderId, Guid supervisorId)
         {
             Name = name;
-            Church = church;
-            Leader = leader;
-            Supervisor = supervisor;
+            ChurchId = churchId;
+            LeaderId = leaderId;
+            SupervisorId = supervisorId;
             _members = new List<Member>();
 
             // AddNotifications(new Contract<Cell>()
@@ -25,6 +27,9 @@ namespace FarolContext.Domain.Entities
         }
 
         public string Name { get; private set; }
+        public Guid ChurchId { get; private set; }
+        public Guid LeaderId { get; private set; }
+        public Guid SupervisorId { get; private set; }
         public Church Church { get; private set; }
         public Member Leader { get; private set; }
         public Member Supervisor { get; private set; }
