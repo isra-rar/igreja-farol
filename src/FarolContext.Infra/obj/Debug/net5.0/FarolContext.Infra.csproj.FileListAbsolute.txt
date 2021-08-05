@@ -10,3 +10,11 @@ C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.csp
 C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.dll
 C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\ref\FarolContext.Infra.dll
 C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.pdb
+C:\Learning\farol\src\FarolContext.Infra\bin\Debug\net5.0\FarolContext.Infra.runtimeconfig.json
+C:\Learning\farol\src\FarolContext.Infra\bin\Debug\net5.0\FarolContext.Infra.runtimeconfig.dev.json
+C:\Learning\farol\src\FarolContext.Infra\bin\Debug\net5.0\FarolContext.Domain.dll
+C:\Learning\farol\src\FarolContext.Infra\bin\Debug\net5.0\FarolContext.Shared.dll
+C:\Learning\farol\src\FarolContext.Infra\bin\Debug\net5.0\FarolContext.Domain.pdb
+C:\Learning\farol\src\FarolContext.Infra\bin\Debug\net5.0\FarolContext.Shared.pdb
+C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.csproj.CopyComplete
+C:\Learning\farol\src\FarolContext.Infra\obj\Debug\net5.0\FarolContext.Infra.genruntimeconfig.cache

@@ -21,6 +21,10 @@ namespace FarolContext.Infra.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
            modelBuilder.ApplyConfiguration(new ChurchMap());
+           modelBuilder.ApplyConfiguration(new MemberMap());
+           modelBuilder.ApplyConfiguration(new CellMap());
+           modelBuilder.ApplyConfiguration(new MinistryMap());
+           modelBuilder.ApplyConfiguration(new VisitorMap());
         }
     }
 }
