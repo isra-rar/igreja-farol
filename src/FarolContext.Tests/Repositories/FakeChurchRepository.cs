@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using FarolContext.Domain.Entities;
 using FarolContext.Domain.Repositories;
@@ -15,25 +16,29 @@ namespace FarolContext.Tests.Repositories
             
         }
 
-        public IEnumerable<Cell> GetAllCells(string id)
+        public IEnumerable<Cell> GetAllCells(Guid id)
         {
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<Member> GetAllMembers(string id)
+        public IEnumerable<Member> GetAllMembers(Guid id)
         {
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<Ministry> GetAllMinistries(string id)
+        public IEnumerable<Ministry> GetAllMinistries(Guid id)
         {
             throw new System.NotImplementedException();
         }
 
-        public Church GetById(string id)
+        public Church GetById(Guid id)
         {
             throw new System.NotImplementedException();
         }
 
+        public IEnumerable<Church> GetAllChurchs()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

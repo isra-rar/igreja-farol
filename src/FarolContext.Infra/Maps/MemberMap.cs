@@ -80,18 +80,6 @@ namespace FarolContext.Infra.Maps
                 adrress.Property(c => c.ZipCode)
                 .HasColumnType("varchar(150)");
             });
-
-            builder.HasOne(m => m.Church)
-            .WithMany(m => m.Members)
-            .HasForeignKey(m => m.ChurchId);
-
-            builder.HasOne(m => m.Ministry)
-            .WithMany(m => m.Members)
-            .HasForeignKey(m => m.MinistryId);
-
-            builder.HasOne(m => m.Cell)
-            .WithMany(m => m.Members)
-            .HasForeignKey(m => m.CellId);
         }
     }
 }

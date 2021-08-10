@@ -24,6 +24,7 @@ namespace FarolContext.Infra.Maps
 
                 cnpj.Property(c => c.Type)
                 .HasColumnName("DocumentType")
+                .HasConversion<string>()
                 .IsRequired();
             });
 

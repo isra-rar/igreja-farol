@@ -6,14 +6,19 @@ namespace FarolContext.Domain.ValueObjects
 {
     public class Document : ValueObject
     {
+
+        public Document()
+        {
+            
+        }
         public Document(string number, EDocumentType type)
         {
             Number = number;
             Type = type;
             
-            AddNotifications(new Contract<Document>()
-            .Requires()
-            .IsTrue(Validate(), "Document.Number", "Documento Inválido"));
+            // AddNotifications(new Contract<Document>()
+            // .Requires()
+            // .IsTrue(Validate(), "Document.Number", "Documento Inválido"));
         }
 
         public string Number { get; private set; }

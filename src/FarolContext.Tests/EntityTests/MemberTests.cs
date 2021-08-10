@@ -25,7 +25,7 @@ namespace FarolContext.Tests
               faker.Address.Country(), faker.Address.ZipCode());
             var church = new Church("Farol", document, email, contact, address);
 
-            // var member = new Member(church, EMemberType.PASTOR,
+            // var member = new Member(EMemberType.PASTOR, church.Id, 
             // new Name(faker.Person.FirstName, faker.Person.LastName),
             // faker.Person.DateOfBirth, EGender.MEN,
             // new Document(newCPF, EDocumentType.CPF),
@@ -33,7 +33,7 @@ namespace FarolContext.Tests
             // new Contact(faker.Phone.PhoneNumber(), faker.Phone.PhoneNumber()),
             // new Address(faker.Address.StreetName(), faker.Address.BuildingNumber(),
             //  faker.Address.County(), faker.Address.City(), faker.Address.State(),
-            //   faker.Address.Country(), faker.Address.ZipCode()), null, null);
+            //   faker.Address.Country(), faker.Address.ZipCode()));
 
             //Assert.True(member.);
         }

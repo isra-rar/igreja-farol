@@ -7,22 +7,17 @@ namespace FarolContext.Domain.Queries
 {
     public static class ChurchQueries
     {
-        public static Expression<Func<Church, bool>> GetById(string id)
+        public static Expression<Func<Member, bool>> GetAllMembers(Guid id)
         {
-            return x => x.Id.Equals(id);
+            return x => x.ChurchId == id;
         }
-        public static Expression<Func<Church, bool>> GetAllMembers(string id)
+        public static Expression<Func<Ministry, bool>> GetAllMinistries(Guid id)
         {
-            return x => x.Members.All(m => m.ChurchId.Equals(id));
+            return x => x.ChurchId == id;
         }
-        public static Expression<Func<Church, bool>> GetAllMinistries(string id)
+        public static Expression<Func<Cell, bool>> GetAllCells(Guid id)
         {
-            return x => x.Ministries.All(m => m.ChurchId.Equals(id));
+            return x => x.ChurchId == id;;
         }
-        public static Expression<Func<Church, bool>> GetAllCells(string id)
-        {
-            return x => x.Cells.All(m => m.ChurchId.Equals(id));
-        }
-
     }
 }

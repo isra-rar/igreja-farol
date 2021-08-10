@@ -5,8 +5,9 @@ using Flunt.Validations;
 
 namespace FarolContext.Domain.Entities
 {
-    public abstract class People : Entity
+    public class People : Entity
     {
+        public People(){}
         protected People(Name name, DateTime age, EGender gender, Document document, Email email, Contact contact, Address address)
         {
             Name = name;

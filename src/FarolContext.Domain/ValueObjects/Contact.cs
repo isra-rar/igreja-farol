@@ -5,6 +5,10 @@ namespace FarolContext.Domain.ValueObjects
 {
     public class Contact : ValueObject
     {
+        public Contact()
+        {
+            
+        }
         public Contact(string cellPhone, string telephone)
         {
             Cellphone = cellPhone;

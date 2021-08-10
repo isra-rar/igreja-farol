@@ -11,6 +11,13 @@ namespace FarolContext.Domain.Entities
         private IList<Ministry> _ministries;
         private IList<Cell> _cells;
 
+        public Church()
+        {
+            _members = new List<Member>();
+            _ministries = new List<Ministry>();
+            _cells = new List<Cell>();    
+        }
+
         public Church(string name, Document document, Email email, Contact contact, Address address)
         {
             Name = name;
@@ -32,18 +39,6 @@ namespace FarolContext.Domain.Entities
         public IEnumerable<Ministry> Ministries { get { return _ministries.ToArray(); } }
         public IEnumerable<Cell> Cells { get { return _cells.ToArray(); } }
 
-        public void AddMemberToChurch(Member member)
-        {
-            if (member == null)
-            {
-                // AddNotifications(new Contract<Church>()
-                // .Requires()
-                // .IsNotNull(member, "Member", "Objeto Membro está nulo")
-                // );
-            }
-
-            _members.Add(member);
-        }
         public void AddMinistryToChurch(Ministry ministry)
         {
             if (ministry == null)
