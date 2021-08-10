@@ -1,8 +1,12 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using FarolContext.Domain.Commands;
+using FarolContext.Domain.Commands.Request;
+using FarolContext.Domain.Commands.Response;
 using FarolContext.Domain.Entities;
 using FarolContext.Domain.Handler;
 using FarolContext.Domain.Repositories;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FarolContext.WebApi.Controllers
@@ -12,6 +16,13 @@ namespace FarolContext.WebApi.Controllers
     public class ChurchController : ControllerBase
     {
 
+        private readonly IMediator _mediator;
+
+        public ChurchController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
         [HttpGet]
         public IEnumerable<Church> GetAll([FromServices] IChurchRepository respository)
         {
@@ -20,11 +31,10 @@ namespace FarolContext.WebApi.Controllers
 
         [HttpPost]
         [Route("create")]
-        public GenericCommandResult Create(
-            [FromBody] CreateChurchCommand command,
-            [FromServices] CreateChurchRequestHandler handler)
+        public Task<GenericCommandResult<CreateChurchResponse>> Create(
+            [FromBody] CreateChurchRequest command)
         {
-            return (GenericCommandResult)handler.Handle(command);
+            return _mediator.Send(command);
         }
     }
 }

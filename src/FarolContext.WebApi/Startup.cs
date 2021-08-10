@@ -15,9 +15,9 @@ using System.Reflection;
 using FarolContext.Infra.Context;
 using Microsoft.EntityFrameworkCore;
 using FarolContext.Domain.Repositories;
-using FarolContext.Domain.Handler.Contratcs;
 using FarolContext.Domain.Handler;
 using FarolContext.Infra.Repositories;
+using MediatR;
 
 namespace FarolContext.WebApi
 {
@@ -44,7 +44,7 @@ namespace FarolContext.WebApi
             services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
 
             services.AddScoped<IChurchRepository, ChurchRepository>();
-            services.AddScoped<CreateChurchRequestHandler, CreateChurchRequestHandler>();
+            services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

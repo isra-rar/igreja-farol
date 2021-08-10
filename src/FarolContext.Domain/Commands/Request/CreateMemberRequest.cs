@@ -4,11 +4,11 @@ using FarolContext.Domain.Enums;
 using Flunt.Notifications;
 using Flunt.Validations;
 
-namespace FarolContext.Domain.Commands
+namespace FarolContext.Domain.Commands.Request
 {
-    public class CreateMemberCommand : Notifiable<Notification>, ICommand
+    public class CreateMemberRequest : Notifiable<Notification>, ICommand
     {
-        public CreateMemberCommand(Guid churchId, string firstName, string lastName, DateTime age, EGender gender, string docNumber, EDocumentType type, string address, string cellphone, string telephone, EMemberType memberType)
+        public CreateMemberRequest(Guid churchId, string firstName, string lastName, DateTime age, EGender gender, string docNumber, EDocumentType type, string address, string cellphone, string telephone, EMemberType memberType)
         {
             ChurchId = churchId;
             FirstName = firstName;
@@ -38,7 +38,7 @@ namespace FarolContext.Domain.Commands
         public void Validate()
         {
             AddNotifications(
-                new Contract<CreateMemberCommand>()
+                new Contract<CreateMemberRequest>()
                 .Requires()
                 .IsNotNull(ChurchId, "ChurchId", "Id da Igreja não pode ser nulo")
                 .IsNotNullOrEmpty(FirstName, "FirstName", "Primeiro nome não pode ser nulo ou vazio")

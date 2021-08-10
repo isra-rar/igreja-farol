@@ -1,13 +1,15 @@
 using FarolContext.Domain.Commands.Contracts;
+using FarolContext.Domain.Commands.Response;
 using FarolContext.Domain.Enums;
 using Flunt.Notifications;
 using Flunt.Validations;
+using MediatR;
 
-namespace FarolContext.Domain.Commands
+namespace FarolContext.Domain.Commands.Request
 {
-    public class CreateChurchCommand : Notifiable<Notification>, ICommand
+    public class CreateChurchRequest : Notifiable<Notification>, IRequest<GenericCommandResult<CreateChurchResponse>> , ICommand
     {
-        public CreateChurchCommand(string name, string docNumber, EDocumentType type, string address, string cellphone, string telephone, string street, string number, string neighborhood, string city, string state, string country, string zipCode)
+        public CreateChurchRequest(string name, string docNumber, EDocumentType type, string address, string cellphone, string telephone, string street, string number, string neighborhood, string city, string state, string country, string zipCode)
         {
             Name = name;
             DocNumber = docNumber;
@@ -41,7 +43,7 @@ namespace FarolContext.Domain.Commands
         public void Validate()
         {
             AddNotifications(
-                new Contract<CreateChurchCommand>()
+                new Contract<CreateChurchRequest>()
                 .Requires()
                 .IsGreaterThan(Name, 3, "Name", "Nome da Igreja deve ser maior que 3 caracteres")
                 .IsEmail(Address, "Email", "E-mail invalido")

@@ -2,16 +2,18 @@ using FarolContext.Domain.Commands.Contracts;
 
 namespace FarolContext.Domain.Commands
 {
-    public class GenericCommandResult : ICommandResult
+    public class GenericCommandResult<T>  where T : ICommandResult
     {
-        public GenericCommandResult(bool sucess, string message, object data)
+        public GenericCommandResult(bool sucess, string message, object data, int code = 200)
         {
             Sucess = sucess;
             Message = message;
+            Code = code;
             Data = data;
         }
 
         public bool Sucess { get; set; }
+        public int Code { get; set; }
         public string Message { get; set; }
         public object Data { get; set; }
     }

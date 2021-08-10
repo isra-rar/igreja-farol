@@ -67,3 +67,5 @@ C:\Learning\farol\src\FarolContext.WebApi\bin\Debug\net5.0\runtimes\win\lib\nets
 C:\Learning\farol\src\FarolContext.WebApi\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Learning\farol\src\FarolContext.WebApi\bin\Debug\net5.0\Humanizer.dll
 C:\Learning\farol\src\FarolContext.WebApi\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Learning\farol\src\FarolContext.WebApi\bin\Debug\net5.0\MediatR.dll
+C:\Learning\farol\src\FarolContext.WebApi\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
