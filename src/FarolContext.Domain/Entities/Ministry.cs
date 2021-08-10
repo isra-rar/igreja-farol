@@ -18,13 +18,6 @@ namespace FarolContext.Domain.Entities
             Name = name;
             ChurchId = churchId;
             _members = new List<Member>();
-
-            // AddNotifications(new Contract<Ministry>()
-            // .Requires()
-            // .IsGreaterThan(Name, 3, "Ministry.Name", "Nome do Ministerio deve ser maior que 3 caracteres")
-            // .IsNotNull(Church, "Ministry.Church", "Não é possivel criar um Ministerio sem uma Igreja vinculada")
-            // .IsNotNull(Leader, "Ministry.Leader", "Não é possivel criar uma Ministerio sem Lider vinculado")
-            // );
         }
 
         public string Name { get; private set; }

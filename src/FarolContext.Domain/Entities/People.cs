@@ -17,12 +17,6 @@ namespace FarolContext.Domain.Entities
             Email = email;
             Contact = contact;
             Address = address;
-
-            // AddNotifications(new Contract<People>()
-            // .Requires()
-            // .IsNotNull(Age, "People.Age", "Idade é obrigatório")
-            // .IsNotNull(Gender, "People.Gender", "Sexo é obrigatório"),
-            //     name, document, email, contact, address);
         }
 
         public Name Name { get; private set; }

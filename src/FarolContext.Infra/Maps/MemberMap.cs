@@ -22,7 +22,7 @@ namespace FarolContext.Infra.Maps
                 .IsRequired()
                 .HasColumnName("LastName")
                 .HasColumnType("varchar(150)");
-            });
+            }).Navigation(p => p.Name).IsRequired();
 
             builder.Property(m => m.Age)
             .IsRequired()
@@ -45,14 +45,14 @@ namespace FarolContext.Infra.Maps
                 cnpj.Property(c => c.Type)
                 .HasColumnName("DocumentType")
                 .IsRequired();
-            });
+            }).Navigation(p => p.Document).IsRequired();
 
             builder.OwnsOne(c => c.Email, email => {
                 email.Property(c => c.Address)
                 .IsRequired()
                 .HasColumnName("Email")
                 .HasColumnType("varchar(150)");
-            });
+            }).Navigation(p => p.Email).IsRequired();
 
             builder.OwnsOne(c => c.Contact, contact => {
                 contact.Property(c => c.Cellphone)
@@ -66,18 +66,25 @@ namespace FarolContext.Infra.Maps
 
             builder.OwnsOne(c => c.Address, adrress => {
                 adrress.Property(c => c.Street)
+                .HasColumnName("Street")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.Number)
+                .HasColumnName("Number")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.Neighborhood)
+                .HasColumnName("Neighborhood")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.City)
+                .HasColumnName("City")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.State)
+                .HasColumnName("State")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.Country)
+                .HasColumnName("Country")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.ZipCode)
+                .HasColumnName("ZipCode")
                 .HasColumnType("varchar(150)");
             });
         }

@@ -33,7 +33,7 @@ namespace FarolContext.Domain.Entities
         public Contact Contact { get; private set; }
         public Address Address { get; private set; }
         public DateTime VisitDate { get; private set; }
-        public Guid MemberInvitedId { get; private set; }
+        public Guid? MemberInvitedId { get; private set; }
         public Guid ChurchId { get; private set; }
         public Member MemberInvited { get; private set; }
         public Church Church { get; private set; }

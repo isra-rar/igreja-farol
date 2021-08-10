@@ -40,7 +40,8 @@ namespace FarolContext.WebApi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Igreja Farol", Version = "v1" });
             });
 
-            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
+            //services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
 
             services.AddScoped<IChurchRepository, ChurchRepository>();
             services.AddScoped<CreateChurchRequestHandler, CreateChurchRequestHandler>();

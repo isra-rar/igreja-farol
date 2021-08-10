@@ -43,10 +43,6 @@ namespace FarolContext.Domain.Entities
         {
             if (ministry == null)
             {
-                // AddNotifications(new Contract<Church>()
-                // .Requires()
-                // .IsNotNull(ministry, "Ministerio", "Objeto Ministerio está nulo")
-                // );
             }
 
             _ministries.Add(ministry);
@@ -55,10 +51,6 @@ namespace FarolContext.Domain.Entities
         {
             if (cell == null)
             {
-                // AddNotifications(new Contract<Church>()
-                // .Requires()
-                // .IsNotNull(cell, "Member", "Objeto Celula está nulo")
-                // );
             }
 
             _cells.Add(cell);

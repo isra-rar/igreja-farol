@@ -16,7 +16,7 @@ namespace FarolContext.Tests.Fakers
             RuleFor(m => m.Document, () => new DocumentCPFFaker().Generate());
             RuleFor(m => m.Email, () => new EmailFaker().Generate());
             RuleFor(m => m.Contact, () => new ContactFaker().Generate());
-            RuleFor(m => m.Address, () => new AdrressFaker().Generate());
+            RuleFor(m => m.Address, () => new AddressFaker().Generate());
             RuleFor(m => m.MemberType, f => f.PickRandom<EMemberType>());
         }
     }

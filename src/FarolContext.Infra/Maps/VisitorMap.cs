@@ -64,21 +64,27 @@ namespace FarolContext.Infra.Maps
                 .HasColumnType("varchar(12)");
             });
 
-            builder.OwnsOne(c => c.Address, adrress =>
-            {
+           builder.OwnsOne(c => c.Address, adrress => {
                 adrress.Property(c => c.Street)
+                .HasColumnName("Street")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.Number)
+                .HasColumnName("Number")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.Neighborhood)
+                .HasColumnName("Neighborhood")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.City)
+                .HasColumnName("City")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.State)
+                .HasColumnName("State")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.Country)
+                .HasColumnName("Country")
                 .HasColumnType("varchar(150)");
                 adrress.Property(c => c.ZipCode)
+                .HasColumnName("ZipCode")
                 .HasColumnType("varchar(150)");
             });
 
@@ -88,7 +94,8 @@ namespace FarolContext.Infra.Maps
 
             builder.HasOne(v => v.MemberInvited)
             .WithOne()
-            .HasForeignKey<Member>(v => v.Id);
+            .HasForeignKey<Member>(v => v.Id)
+            .OnDelete(DeleteBehavior.Restrict);
             
 
         }

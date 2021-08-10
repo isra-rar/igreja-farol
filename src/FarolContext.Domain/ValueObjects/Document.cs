@@ -15,10 +15,6 @@ namespace FarolContext.Domain.ValueObjects
         {
             Number = number;
             Type = type;
-            
-            // AddNotifications(new Contract<Document>()
-            // .Requires()
-            // .IsTrue(Validate(), "Document.Number", "Documento Inválido"));
         }
 
         public string Number { get; private set; }

@@ -29,10 +29,6 @@ namespace FarolContext.Domain.Entities
         {
             if (member == null)
             {
-                // AddNotifications(new Contract<Cell>()
-                // .Requires()
-                // .IsNotNull(member, "Member", "Objeto Membro está nulo")
-                // );
             }
 
             _members.Add(member);

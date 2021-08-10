@@ -35,9 +35,9 @@ namespace FarolContext.Domain.Entities
         public EMemberType MemberType { get; private set; }
         public Church Church { get; private set; }
         public Ministry Ministry { get; private set; }
-        public Cell Cell { get; set; }
+        public Cell Cell { get; private set; }
         public Guid ChurchId { get; private set; }
-        public Guid CellId { get; private set; }
-        public Guid MinistryId { get; private set; }
+        public Guid? CellId { get; private set; }
+        public Guid? MinistryId { get; private set; }
     }
 }

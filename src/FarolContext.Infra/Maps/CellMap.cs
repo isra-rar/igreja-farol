@@ -18,7 +18,8 @@ namespace FarolContext.Infra.Maps
 
             builder.HasMany(c => c.Members)
             .WithOne(c => c.Cell)
-            .HasForeignKey(c => c.CellId);
+            .HasForeignKey(c => c.CellId)
+            .IsRequired(false);
         }
     }
 }

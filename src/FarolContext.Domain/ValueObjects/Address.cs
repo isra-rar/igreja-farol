@@ -1,8 +1,8 @@
-using Flunt.Validations;
+using FarolContext.Shared.ValueObjects;
 
-namespace FarolContext.Domain.Entities
+namespace FarolContext.Domain.ValueObjects
 {
-    public class Address : Entity
+    public class Address : ValueObject
     {
         public Address(){}
         

@@ -16,7 +16,6 @@ namespace FarolContext.Infra.Context
         public DbSet<Ministry> Ministries { get; set; }
         public DbSet<Cell> Cells { get; set; }
         public DbSet<Visitor> Visitors { get; set; }
-        public DbSet<Address> Addresses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
