@@ -4,7 +4,6 @@ using FarolContext.Domain.Commands;
 using FarolContext.Domain.Commands.Request;
 using FarolContext.Domain.Commands.Response;
 using FarolContext.Domain.Entities;
-using FarolContext.Domain.Handler;
 using FarolContext.Domain.Repositories;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -17,24 +16,24 @@ namespace FarolContext.WebApi.Controllers
     {
 
         private readonly IMediator _mediator;
+        private readonly IChurchRepository _churchRepository;
 
-        public ChurchController(IMediator mediator)
+        public ChurchController(IMediator mediator, IChurchRepository churchRepository)
         {
             _mediator = mediator;
+            _churchRepository = churchRepository;
         }
 
         [HttpGet]
-        public IEnumerable<Church> GetAll([FromServices] IChurchRepository respository)
+        public IEnumerable<Church> GetAll()
         {
-            return respository.GetAllChurchs();
+            return _churchRepository.GetAllChurchs();
         }
 
         [HttpPost]
         [Route("create")]
         public Task<GenericCommandResult<CreateChurchResponse>> Create(
-            [FromBody] CreateChurchRequest command)
-        {
-            return _mediator.Send(command);
-        }
+            [FromBody] CreateChurchRequest command) 
+            => _mediator.Send(command);
     }
 }

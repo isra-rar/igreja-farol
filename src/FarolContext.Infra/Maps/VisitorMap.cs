@@ -91,13 +91,6 @@ namespace FarolContext.Infra.Maps
             builder.Property(v => v.VisitDate)
             .IsRequired()
             .HasColumnType("datetime");
-
-            builder.HasOne(v => v.MemberInvited)
-            .WithOne()
-            .HasForeignKey<Member>(v => v.Id)
-            .OnDelete(DeleteBehavior.Restrict);
-            
-
         }
     }
 }

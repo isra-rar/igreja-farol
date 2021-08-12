@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NQbB/QD3Sywy58pQzcpNL/g/ZAhp11arUfnnRjunq4hRPpZZe2s9e/wBdsn5LcAkWolbmDtlW5wwJJPmB44B+g==",
+  "dgSpecHash": "qdE1rCDXwBdNk5UcgAvy7Y4pKFb8NFziHH5hRyPwREm/w4qUOJFQbmeRt0wT1A0/AEo82EuF7c98wHXg6dxkCw==",
   "success": true,
   "projectFilePath": "C:\\Learning\\farol\\src\\FarolContext.Domain\\FarolContext.Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\israe\\.nuget\\packages\\divino.operationresult\\2.0.2\\divino.operationresult.2.0.2.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\flunt\\2.0.4\\flunt.2.0.4.nupkg.sha512",
-    "C:\\Users\\israe\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
-    "C:\\Users\\israe\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\israe\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512"
   ],
   "logs": []
 }

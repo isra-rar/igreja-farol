@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FarolContext.Infra.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210810053433_InitialCreate")]
+    [Migration("20210812050659_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -65,6 +65,7 @@ namespace FarolContext.Infra.Migrations
             modelBuilder.Entity("FarolContext.Domain.Entities.Member", b =>
                 {
                     b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("Age")
@@ -152,6 +153,8 @@ namespace FarolContext.Infra.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("ChurchId");
+
+                    b.HasIndex("MemberInvitedId");
 
                     b.ToTable("Visitor");
                 });
@@ -292,12 +295,6 @@ namespace FarolContext.Infra.Migrations
                     b.HasOne("FarolContext.Domain.Entities.Church", "Church")
                         .WithMany("Members")
                         .HasForeignKey("ChurchId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("FarolContext.Domain.Entities.Visitor", null)
-                        .WithOne("MemberInvited")
-                        .HasForeignKey("FarolContext.Domain.Entities.Member", "Id")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -469,6 +466,10 @@ namespace FarolContext.Infra.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("FarolContext.Domain.Entities.Member", "MemberInvited")
+                        .WithMany("Visitors")
+                        .HasForeignKey("MemberInvitedId");
+
                     b.OwnsOne("FarolContext.Domain.ValueObjects.Address", "Address", b1 =>
                         {
                             b1.Property<Guid>("VisitorId")
@@ -604,6 +605,8 @@ namespace FarolContext.Infra.Migrations
 
                     b.Navigation("Email");
 
+                    b.Navigation("MemberInvited");
+
                     b.Navigation("Name");
                 });
 
@@ -621,14 +624,14 @@ namespace FarolContext.Infra.Migrations
                     b.Navigation("Ministries");
                 });
 
+            modelBuilder.Entity("FarolContext.Domain.Entities.Member", b =>
+                {
+                    b.Navigation("Visitors");
+                });
+
             modelBuilder.Entity("FarolContext.Domain.Entities.Ministry", b =>
                 {
                     b.Navigation("Members");
-                });
-
-            modelBuilder.Entity("FarolContext.Domain.Entities.Visitor", b =>
-                {
-                    b.Navigation("MemberInvited");
                 });
 #pragma warning restore 612, 618
         }

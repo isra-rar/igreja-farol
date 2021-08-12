@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Divino.OperationResult/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/OperationResult.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/OperationResult.dll": {}
+        }
+      },
       "Flunt/2.0.4": {
         "type": "package",
         "compile": {
@@ -1542,6 +1551,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Divino.OperationResult": "2.0.2",
           "FarolContext.Shared": "1.0.0",
           "Flunt": "2.0.4",
           "MediatR": "9.0.0"
@@ -1569,6 +1579,18 @@
     }
   },
   "libraries": {
+    "Divino.OperationResult/2.0.2": {
+      "sha512": "ekor7O41f6BSufV1jgbjh2avVT7jZH/Vd5HHP3ZvLj5B2rtZOnDojOLx7jgVK6gkc8NUmELdkoYIcDa+O/5VmA==",
+      "type": "package",
+      "path": "divino.operationresult/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "divino.operationresult.2.0.2.nupkg.sha512",
+        "divino.operationresult.nuspec",
+        "lib/netstandard2.0/OperationResult.dll"
+      ]
+    },
     "Flunt/2.0.4": {
       "sha512": "0hBUXlsxLH2vsp3KGbRWp4nVqdn6XVuqUm8uW3C2vn8hVIspC1A5YKNQNP9jOGXFZgmKFUa3AUAQRxeWOYlZdg==",
       "type": "package",
@@ -5947,18 +5969,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[5.0.0, 5.0.0]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

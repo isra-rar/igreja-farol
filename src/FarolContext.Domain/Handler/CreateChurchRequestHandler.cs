@@ -1,7 +1,6 @@
 using System.Threading;
 using System.Threading.Tasks;
 using FarolContext.Domain.Commands;
-using FarolContext.Domain.Commands.Contracts;
 using FarolContext.Domain.Commands.Request;
 using FarolContext.Domain.Commands.Response;
 using FarolContext.Domain.Entities;
@@ -40,8 +39,7 @@ namespace FarolContext.Domain.Handler
                 Id = church.Id,
                 CreationDate = church.CreationDate,
                 Name = church.Name,
-                DocNumber = church.Document.Number,
-                Type = church.Document.Type
+                Document = new Document(church.Document.Number, church.Document.Type)
             });
 
             return Task.FromResult(result);

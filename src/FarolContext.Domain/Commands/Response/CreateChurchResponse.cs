@@ -1,6 +1,7 @@
 using System;
 using FarolContext.Domain.Commands.Contracts;
 using FarolContext.Domain.Enums;
+using FarolContext.Domain.ValueObjects;
 
 namespace FarolContext.Domain.Commands.Response
 {
@@ -9,7 +10,6 @@ namespace FarolContext.Domain.Commands.Response
         public Guid Id { get; set; }
         public DateTime CreationDate { get; set; }
         public string Name { get; set; }
-        public string DocNumber { get; set; }
-        public EDocumentType Type { get; set; }
+        public Document Document { get; set; }
     }
 }

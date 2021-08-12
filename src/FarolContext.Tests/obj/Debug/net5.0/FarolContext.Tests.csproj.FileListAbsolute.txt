@@ -92,7 +92,6 @@ C:\Learning\farol\src\FarolContext.Tests\bin\Debug\net5.0\FarolContext.Domain.dl
 C:\Learning\farol\src\FarolContext.Tests\bin\Debug\net5.0\FarolContext.Shared.dll
 C:\Learning\farol\src\FarolContext.Tests\bin\Debug\net5.0\FarolContext.Shared.pdb
 C:\Learning\farol\src\FarolContext.Tests\bin\Debug\net5.0\FarolContext.Domain.pdb
-C:\Learning\farol\src\FarolContext.Tests\obj\Debug\net5.0\FarolContext.Tests.csprojAssemblyReference.cache
 C:\Learning\farol\src\FarolContext.Tests\obj\Debug\net5.0\FarolContext.Tests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Learning\farol\src\FarolContext.Tests\obj\Debug\net5.0\FarolContext.Tests.AssemblyInfoInputs.cache
 C:\Learning\farol\src\FarolContext.Tests\obj\Debug\net5.0\FarolContext.Tests.AssemblyInfo.cs
@@ -104,3 +103,6 @@ C:\Learning\farol\src\FarolContext.Tests\obj\Debug\net5.0\FarolContext.Tests.pdb
 C:\Learning\farol\src\FarolContext.Tests\obj\Debug\net5.0\FarolContext.Tests.genruntimeconfig.cache
 C:\Learning\farol\src\FarolContext.Tests\bin\Debug\net5.0\Flunt.dll
 c:\Learning\farol\src\FarolContext.Tests\bin\Debug\net5.0\Bogus.dll
+C:\Learning\farol\src\FarolContext.Tests\bin\Debug\net5.0\OperationResult.dll
+C:\Learning\farol\src\FarolContext.Tests\bin\Debug\net5.0\MediatR.dll
+C:\Learning\farol\src\FarolContext.Tests\obj\Debug\net5.0\FarolContext.Tests.csproj.AssemblyReference.cache

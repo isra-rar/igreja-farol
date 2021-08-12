@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XH/bID/SlKJF6+aGW77ek8UDYEGNKCRaN6ZdCkatHCDe63luI4zx636aeRafktfo5UT4DS37qPQ/2bwClPMToQ==",
+  "dgSpecHash": "QPLtE686VZfUH8VUHh5XG08p3Otz0112BOD1GbuuZ9eyNP0JMVPce1ZSaQRGNSjiaF5vFD1hlq1e4oBB9tVNKg==",
   "success": true,
   "projectFilePath": "C:\\Learning\\farol\\src\\FarolContext.Infra\\FarolContext.Infra.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\israe\\.nuget\\packages\\divino.operationresult\\2.0.2\\divino.operationresult.2.0.2.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\flunt\\2.0.4\\flunt.2.0.4.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
@@ -102,8 +103,7 @@
     "C:\\Users\\israe\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\israe\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\israe\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\israe\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\israe\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -8,12 +8,21 @@
     ".NETCoreApp,Version=v5.0": {
       "FarolContext.Domain/1.0.0": {
         "dependencies": {
+          "Divino.OperationResult": "2.0.2",
           "FarolContext.Shared": "1.0.0",
           "Flunt": "2.0.4",
           "MediatR": "9.0.0"
         },
         "runtime": {
           "FarolContext.Domain.dll": {}
+        }
+      },
+      "Divino.OperationResult/2.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/OperationResult.dll": {
+            "assemblyVersion": "2.0.2.0",
+            "fileVersion": "2.0.2.0"
+          }
         }
       },
       "Flunt/2.0.4": {
@@ -47,6 +56,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Divino.OperationResult/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ekor7O41f6BSufV1jgbjh2avVT7jZH/Vd5HHP3ZvLj5B2rtZOnDojOLx7jgVK6gkc8NUmELdkoYIcDa+O/5VmA==",
+      "path": "divino.operationresult/2.0.2",
+      "hashPath": "divino.operationresult.2.0.2.nupkg.sha512"
     },
     "Flunt/2.0.4": {
       "type": "package",

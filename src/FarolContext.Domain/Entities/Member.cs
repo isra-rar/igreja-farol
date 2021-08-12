@@ -1,4 +1,7 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using FarolContext.Domain.Enums;
 using FarolContext.Domain.ValueObjects;
 using Flunt.Validations;
@@ -7,8 +10,11 @@ namespace FarolContext.Domain.Entities
 {
     public class Member : Entity
     {
+        private IList<Visitor> _visitors;
+
         public Member()
         {
+            _visitors = new List<Visitor>();
         }
 
         public Member(Name name, DateTime age, EGender gender, Document document, Email email, Contact contact, Address address, EMemberType memberType, Guid churchId)
@@ -22,6 +28,7 @@ namespace FarolContext.Domain.Entities
             Address = address;
             MemberType = memberType;
             ChurchId = churchId;
+            _visitors = new List<Visitor>();
         }
 
         public Name Name { get; private set; }
@@ -39,5 +46,6 @@ namespace FarolContext.Domain.Entities
         public Guid ChurchId { get; private set; }
         public Guid? CellId { get; private set; }
         public Guid? MinistryId { get; private set; }
+        public IEnumerable<Visitor> Visitors { get { return _visitors.ToArray(); } }
     }
 }

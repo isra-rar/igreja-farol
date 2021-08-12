@@ -87,6 +87,11 @@ namespace FarolContext.Infra.Maps
                 .HasColumnName("ZipCode")
                 .HasColumnType("varchar(150)");
             });
+
+            builder.HasMany(m => m.Visitors)
+            .WithOne(v => v.MemberInvited)
+            .HasForeignKey(v => v.MemberInvitedId)
+            .IsRequired(false);;
         }
     }
 }

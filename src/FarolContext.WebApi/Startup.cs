@@ -44,6 +44,7 @@ namespace FarolContext.WebApi
             services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("connectionString")));
 
             services.AddScoped<IChurchRepository, ChurchRepository>();
+            services.AddScoped<IMemberRepository, MemberRepository>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
         }
 
