@@ -12,7 +12,8 @@ namespace FarolContext.Infra.Maps
 
             builder.HasKey(c => c.Id);
 
-            builder.OwnsOne(m => m.Name, name => {
+            builder.OwnsOne(m => m.Name, name =>
+            {
                 name.Property(n => n.FirstName)
                 .IsRequired()
                 .HasColumnName("FirstName")
@@ -36,7 +37,8 @@ namespace FarolContext.Infra.Maps
             .IsRequired()
             .HasConversion<string>();
 
-            builder.OwnsOne(c => c.Document, cnpj => {
+            builder.OwnsOne(c => c.Document, cnpj =>
+            {
                 cnpj.Property(c => c.Number)
                 .IsRequired()
                 .HasColumnName("Cpf")
@@ -47,14 +49,16 @@ namespace FarolContext.Infra.Maps
                 .IsRequired();
             }).Navigation(p => p.Document).IsRequired();
 
-            builder.OwnsOne(c => c.Email, email => {
+            builder.OwnsOne(c => c.Email, email =>
+            {
                 email.Property(c => c.Address)
                 .IsRequired()
                 .HasColumnName("Email")
                 .HasColumnType("varchar(150)");
             }).Navigation(p => p.Email).IsRequired();
 
-            builder.OwnsOne(c => c.Contact, contact => {
+            builder.OwnsOne(c => c.Contact, contact =>
+            {
                 contact.Property(c => c.Cellphone)
                 .HasColumnName("Cellphone")
                 .HasColumnType("varchar(12)");
@@ -64,7 +68,8 @@ namespace FarolContext.Infra.Maps
                 .HasColumnType("varchar(12)");
             });
 
-            builder.OwnsOne(c => c.Address, adrress => {
+            builder.OwnsOne(c => c.Address, adrress =>
+            {
                 adrress.Property(c => c.Street)
                 .HasColumnName("Street")
                 .HasColumnType("varchar(150)");
@@ -91,7 +96,7 @@ namespace FarolContext.Infra.Maps
             builder.HasMany(m => m.Visitors)
             .WithOne(v => v.MemberInvited)
             .HasForeignKey(v => v.MemberInvitedId)
-            .IsRequired(false);;
+            .IsRequired(false);
         }
     }
 }

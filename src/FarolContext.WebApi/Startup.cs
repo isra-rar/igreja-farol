@@ -45,6 +45,7 @@ namespace FarolContext.WebApi
 
             services.AddScoped<IChurchRepository, ChurchRepository>();
             services.AddScoped<IMemberRepository, MemberRepository>();
+            services.AddScoped<ICellRepository, CellRepository>();
             services.AddMediatR(AppDomain.CurrentDomain.GetAssemblies());
         }
 

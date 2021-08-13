@@ -39,6 +39,8 @@ namespace FarolContext.Infra.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "varchar(120)", nullable: false),
                     ChurchId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    LeaderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    SupervisorId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreationDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -59,6 +61,7 @@ namespace FarolContext.Infra.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "varchar(120)", nullable: false),
                     ChurchId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    LeaderId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     CreationDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>

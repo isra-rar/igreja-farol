@@ -16,6 +16,12 @@ namespace FarolContext.Infra.Maps
             .IsRequired()
             .HasColumnType("varchar(120)");
 
+            builder.Property(c => c.LeaderId)
+            .IsRequired();
+
+            builder.Property(c => c.SupervisorId)
+            .IsRequired();
+
             builder.HasMany(c => c.Members)
             .WithOne(c => c.Cell)
             .HasForeignKey(c => c.CellId)

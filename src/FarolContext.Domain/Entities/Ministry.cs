@@ -13,15 +13,17 @@ namespace FarolContext.Domain.Entities
         {
             _members = new List<Member>();
         }
-        public Ministry(string name, Guid churchId)
+        public Ministry(string name, Guid churchId, Guid leaderId)
         {
             Name = name;
             ChurchId = churchId;
+            LeaderId = leaderId;
             _members = new List<Member>();
         }
 
         public string Name { get; private set; }
         public Guid ChurchId { get; private set; }
+        public Guid LeaderId { get; private set; }
         public Church Church { get; private set; }
         public IEnumerable<Member> Members { get { return _members.ToArray(); } }
 
